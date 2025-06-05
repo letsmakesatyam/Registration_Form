@@ -13,7 +13,11 @@
         <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
         <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
         <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+       
+        <label for = "new-password">Create a New Password: <input type="password" id="new-password" name="new-password"
+         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+         title="Must include at least 1 uppercase letter, 1 lowercase letter, 1 number, 1 special character, and be at least 8 characters long"
+         required></label>
       </fieldset>
       <fieldset>
         <legend>Account type (required)</legend>
